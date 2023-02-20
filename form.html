@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <h1>Cadastro de Usuários</h1>
+    <form method="post" action="cadastro.php">
+        <label>Nome:</label>
+        <input type="text" name="nome" required><br><br>
+        <label>Endereço:</label>
+        <input type="text" name="endereco" required><br><br>
+        <label>Idade:</label>
+        <input type="number" name="idade" required><br><br>
+        <label>Usuário:</label>
+        <input type="text" name="usuario" required><br><br>
+        <label>Senha:</label>
+        <input type="password" name="senha" required><br><br>
+        <input type="submit" value="Cadastrar">
+    </form>
+    <br>
+    <form method="post" action="verifica_login.php">
+        <label>Usuário:</label>
+        <input type="text" name="usuario" required><br><br>
+        <label>Senha:</label>
+        <input type="password" name="senha" required><br><br>
+        <input type="submit" value="Entrar">
+    </form>
+</body>
+
+</html>
